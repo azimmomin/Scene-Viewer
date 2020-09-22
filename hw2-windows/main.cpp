@@ -163,7 +163,7 @@ void specialKey(int key, int x, int y) {
 void init() {
   // Initialize shaders
   vertexshader = initshaders(GL_VERTEX_SHADER, "shaders/light.vert.glsl") ;
-  fragmentshader = initshaders(GL_FRAGMENT_SHADER, "shaders/light.frag.glsl") ;
+  fra/entshader = initshaders(GL_FRAGMENT_SHADER, "shaders/light.frag.glsl") ;
   shaderprogram = initprogram(vertexshader, fragmentshader) ; 
   // Get locations of all uniform variables.
   enablelighting = glGetUniformLocation(shaderprogram,"enablelighting") ;
